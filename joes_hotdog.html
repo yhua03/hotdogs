@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joe’s Hotdogs</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<script language="javascript">
+var hotdog,french_fries,sodas,subtotal, after_tax,tax, total,discount,TAX=0.0625,DISC=0.9;
+var H=3.25,F=2,D=1.5;
+hotdog= prompt("How many hotdogs do you want?", "");
+french_fries = prompt("How many orders of French Fries do you want?", "");
+sodas = prompt("How many cups of sodas do you want", "");
+subtotal=hotdog*H+french_fries*F+sodas*D;
+if(subtotal>20){total=subtotal*DISC	
+}else{total=subtotal};
+discount=subtotal-total;
+tax=total*TAX;
+after_tax=total+tax;
+</script>
+
+
+<h1>Joe's Hotdogs</h1>
+<h2> 10% Discount For All Orders Above 20$!!!</h2>
+<h2><img src="sloppydogs.jpg" alt="HOTDOGS" width=30%></h2>
+
+
+<p> Receipt:
+<script>document.write("You ordered:"+hotdog+" Hotdogs,"+french_fries+" French Fries, and "+sodas+" Sodas");</script>
+</p>
+
+<p>
+Subtotal: $
+<script>document.write(+subtotal);</script>
+</p> 
+
+<p>Subtotal after discount(if applicable): $
+<script>document.write(+total);</script>
+</p>
+
+<p><script>document.write("You saved : $"+discount+" today!");</script></p>
+
+<p><script>document.write("Tax: $ "+tax);</script>
+</p>
+<p>Total(After Tax): $
+<script>document.write(after_tax);</script>
+</p>
+
+</body>
+</html>
