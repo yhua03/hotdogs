@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joe’s Hotdogs</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<h1>Joe's Hotdogs</h1>
+<h2> 10% Discount For All Orders Above 20$!!!</h2>
+<h2><img src="sloppydogs.jpg" alt="HOTDOGS" width=30%></h2>
+
+  <form>
+    <div class="form-titles">
+    <label>How many hotdogs would you like? (Unit Price: $3.5 )</label>
+    </div>
+    <select id="hotdogs">
+      <option	value = "1">1</option>
+      <option	value = "2">2</option>
+      <option	value = "3">3</option>
+      <option	value = "4">4</option>
+      <option	value = "5">5</option>
+      <option	value = "10">10</option>
+      <option	value = "15">15</option>
+      <option	value = "20">20</option>
+    </select>
+    <br><br>
+    <div class="form-titles">
+    <label>How many orders of fries would you like? (Unit Price: $2)</label>
+    </div>
+    <select id="fries">
+      <option	value = "1">1</option>
+      <option	value = "2">2</option>
+      <option	value = "3">3</option>
+      <option	value = "4">4</option>
+      <option	value = "5">5</option>
+      <option	value = "10">10</option>
+      <option	value = "15">15</option>
+      <option	value = "20">20</option>
+    </select>
+    <br><br>
+    <div class="form-titles">
+    <label>How many cups of sodas would you like? (Unit Price: $1.5)</label>
+    </div>
+    <select id="sodas">
+      <option	value = "1">1</option>
+      <option	value = "2">2</option>
+      <option	value = "3">3</option>
+      <option	value = "4">4</option>
+      <option	value = "5">5</option>
+      <option	value = "10">10</option>
+      <option	value = "15">15</option>
+      <option	value = "20">20</option>
+    </select>
+    <br><br>
+    <input type="button" value="Get Your Receipt!" onclick="get()" />
+  </form>
+  
+  <div class="details">
+    <script src = "joe.js"></script>
+    <h3>Thanks For Your Purchase! Come Back Soon :)!</h3>
+  </div>
+    
+</body>
+</html>
